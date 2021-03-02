@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  color: #3c4043;
+  font-size: 1.5em;
+  margin-top: 80px;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #5f6368;
+  margin: 0;
+}
+
+i {
+  color: #5f6368;
+}
+
+header ul,
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header li,
+footer li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #5f6368;
+  font-weight: 600;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  border-bottom: 0.5px solid #b4b4b4;
+}
+
+.top_header,
+.logo,
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_header {
+  margin-top: 15px;
+}
+
+.top_header .logo img {
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.top_header .buttons .menu {
+  width: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.top_header .buttons .menu .point {
+  width: 4px;
+  height: 4px;
+  background: #5f6368;
+  border-radius: 50%;
+  margin: 1px;
+}
+
+.top_header .buttons img {
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header_nav ul li {
+  margin-right: 40px;
+  padding: 20px 0 8px;
+}
+
+.header_nav ul li.active a {
+  color: #3367d6;
+}
+
+.header_nav ul li.active {
+  border-bottom: 3px solid #3367d6;
+}
+
+/* Main */
+.container {
+  width: 950px;
+  margin: 200px auto 0;
+}
+
+main p,
+main ul li,
+main ol li {
+  font-size: 0.9em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+main a {
+  color: #3367d6;
+  font-weight: normal;
+}
+
+main ul {
+  list-style-type: lower-alpha;
+}
+
+/* Footer */
+footer {
+  background: #f5f5f5;
+  padding: 10px 0;
+}
+
+footer .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li a {
+  font-weight: 300;
+  font-size: 0.7em;
+}
+
+footer ul li {
+  position: relative;
+  margin-right: 15px;
+}
+
+footer ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: 1.5px;
+  background: #b4b4b4;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(50%);
+}
+
+footer .language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .language select {
+  width: 200px;
+}
+
+footer .language img {
+  margin-right: 10px;
+}
